@@ -1,5 +1,5 @@
 :root{
-    --gradient: linear-gradient (
+    --gradient: linear-gradient(
         45deg,
         #845ec2,
         #d65db1,
@@ -10,7 +10,7 @@
     );
 }
 
-body{
+body {
     font-family: basic-sans, sans-serif;
     min-height: 100vh;
     display: flex;
@@ -20,7 +20,14 @@ body{
     line-height: 1.6;
     color: #333;
     background: #ddd;
-    background-size: 300%;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 10s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left}
+    100% {background-position: right}
 }
 
 .content {
