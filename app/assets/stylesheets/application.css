@@ -30,7 +30,8 @@ body {
     color: white;
     height: 100vh;
     width: 400px;
-    font-size: 50 pt;
+    font-size: 50pt;
+    text-transform: uppercase;
 }
 
 @keyframes bg-animation {
