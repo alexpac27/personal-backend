@@ -12,12 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const titleDiv = document.createElement('div')
     titleDiv.className = "title"
 
+    const contentDiv = document.querySelector(".content")
+    console.log(contentDiv)
+
     navBar.addEventListener("click", (e)=>{
         
         if (e.target.className === "home"){
             console.log("clicked home")
         }if (e.target.className === "projects"){
             console.log("clicked projects")
+
         }if (e.target.className === "contact"){
             console.log("clicked contact")
         }
