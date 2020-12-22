@@ -25,6 +25,14 @@ body {
     animation: bg-animation 10s infinite alternate;
 }
 
+.navBar {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 400px;
+    font-size: 50 pt;
+}
+
 @keyframes bg-animation {
     0% {background-position: left}
     100% {background-position: right}
