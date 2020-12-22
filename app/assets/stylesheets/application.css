@@ -34,6 +34,31 @@ body {
     text-transform: uppercase;
 }
 
+.home {
+    margin-top: 20px;
+    margin-bottom: 30px
+}
+
+.home:hover{
+    color:blueviolet;
+}
+
+.projects{
+    margin-bottom: 30px;
+}
+
+.projects:hover{
+    color: rgb(77, 141, 96);
+}
+
+.contact {
+    margin-bottom: 30px
+}
+
+.contact:hover{
+    color: rgb(236, 147, 162);
+}
+
 @keyframes bg-animation {
     0% {background-position: left}
     100% {background-position: right}
