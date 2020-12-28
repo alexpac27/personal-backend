@@ -33,6 +33,7 @@ body {
     width: 35vw;
     font-size: 50pt;
     text-transform: uppercase;
+    padding-left: 40px;
 }
 
 .home {
@@ -87,7 +88,8 @@ body {
     font-weight: 900;
     font-style: italic;
     font-size: 6rem;
-    color: #ee6352;
+    color: black;
+    /* color: #ee6352; */
     line-height: 0.8;
     margin:0;
   
