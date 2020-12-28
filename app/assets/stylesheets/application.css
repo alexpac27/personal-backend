@@ -19,7 +19,8 @@ body {
     font-size: 1.125em;
     line-height: 1.6;
     color: #333;
-    background: #ddd;
+    background: transparent;
+    /* background: #ddd; */
     background-image: var(--gradient);
     background-size: 400%;
     animation: bg-animation 10s infinite alternate;
@@ -71,12 +72,13 @@ body {
 }
 
 .content {
-    background-color:white;
+    /* background-color:white; */
+    background-color: transparent;
     width: 65vw;
     height: 86vh;
     /* width: 70vw; */
     padding: 3em;
-    box-shadow: 0 0 3em rgb(0, 0, 0.15);
+    /* box-shadow: 0 0 3em rgb(0, 0, 0.15); */
 }
 
 .title {
