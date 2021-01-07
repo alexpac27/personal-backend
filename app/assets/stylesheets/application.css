@@ -1,3 +1,12 @@
+*{
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Bungee Shade', cursive; */
+    /* font-family: 'Codystar', cursive; */
+    /* font-family: 'Londrina Outline', cursive; */
+    /* font-family: 'Londrina Sketch', cursive; */
+}
+
 :root{
     --gradient: linear-gradient(
         45deg,
@@ -11,22 +20,21 @@
 }
 
 body {
-    font-family: basic-sans, sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.125em;
-    line-height: 1.6;
-    color: #333;
+    /* line-height: 1.6; */
+    color: #f95738;
     background: transparent;
-    /* background: #ddd; */
-    background-image: var(--gradient);
+    background: #1f145e;
+    /* background-image: var(--gradient); */
     background-size: 400%;
     animation: bg-animation 10s infinite alternate;
 }
 
-.navBar {
+/* .navBar {
     background-color: black;
     color: white;
     height: 100vh;
@@ -34,7 +42,7 @@ body {
     font-size: 50pt;
     text-transform: uppercase;
     padding-left: 40px;
-}
+} */
 
 .home {
     margin-top: 20px;
@@ -43,29 +51,6 @@ body {
     margin-bottom: 30px
 }
 
-.home:hover{
-    color:blueviolet;
-}
-
-.projects{
-    margin-bottom: 30px;
-    margin-left: 5px;
-    margin-right: 40px;
-}
-
-.projects:hover{
-    color: rgb(77, 141, 96);
-}
-
-.contact {
-    margin-bottom: 30px;
-    margin-left: 5px;
-    margin-right: 40px;
-}
-
-.contact:hover{
-    color: rgb(236, 147, 162);
-}
 
 @keyframes bg-animation {
     0% {background-position: left}
@@ -73,25 +58,27 @@ body {
 }
 
 .content {
-    /* background-color:white; */
     background-color: transparent;
     width: 65vw;
     height: 86vh;
-    /* width: 70vw; */
     padding: 3em;
-    /* box-shadow: 0 0 3em rgb(0, 0, 0.15); */
 }
 
 .title {
-    margin: 0 0 0.5em;
+    margin: 0;
     text-transform: uppercase;
     font-weight: 900;
-    font-style: italic;
     font-size: 6rem;
-    color: black;
-    /* color: #ee6352; */
-    line-height: 0.8;
-    margin:0;
-  
+    color:#aeb8fe;
+    /* line-height: 0.4; */
+    color: #1f145e;
+	text-shadow: -1px 1px 0 #aeb8fe,
+				  1px 1px 0 #aeb8fe,
+				  1px -1px 0 #aeb8fe,
+				  -1px -1px 0 #aeb8fe;
+}
+
+.title span {
+    color:#aeb8fe;
 }
 

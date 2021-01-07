@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const navBar = document.createElement('div')
     navBar.classList += "navBar"
-    navBar.innerHTML = `
-        <div class="home">Home</div>
-        <div class="projects">Projects</div>
-        <div class="contact">Contact</div>
-    `
+    const alex = document.querySelector('h1 span')
+    console.log(alex)
+
+    // navBar.innerHTML = `
+    //     <div class="home">Home</div>
+    //     <div class="projects">Projects</div>
+    //     <div class="contact">Contact</div>
+    // `
+
     const body = document.querySelector('body')
     body.prepend(navBar)
 
@@ -13,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     titleDiv.className = "title"
 
     const contentDiv = document.querySelector(".content")
-    console.log(contentDiv)
+    // console.log(contentDiv)
 
     navBar.addEventListener("click", (e)=>{
         
