@@ -7,70 +7,35 @@
     /* font-family: 'Londrina Sketch', cursive; */
 }
 
-:root{
-    --gradient: linear-gradient(
-        45deg,
-        #845ec2,
-        #d65db1,
-        #ff6f91,
-        #ff9671,
-        #ffc75f,
-        #f9f871
-    );
-}
 
 body {
-    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.125em;
-    /* line-height: 1.6; */
+    font-size: 2.5em;
     color: #f95738;
-    background: transparent;
     background: #1f145e;
-    /* background-image: var(--gradient); */
-    background-size: 400%;
-    animation: bg-animation 10s infinite alternate;
 }
 
-/* .navBar {
-    background-color: black;
-    color: white;
+.header-container {
     height: 100vh;
-    width: 35vw;
-    font-size: 50pt;
-    text-transform: uppercase;
-    padding-left: 40px;
-} */
-
-.home {
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-right: 40px;
-    margin-bottom: 30px
-}
-
-
-@keyframes bg-animation {
-    0% {background-position: left}
-    100% {background-position: right}
-}
-
-.content {
-    background-color: transparent;
-    width: 65vw;
-    height: 86vh;
-    padding: 3em;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+    /* position: static; */
+    line-height: 0.9;
+    background: #1f145e;
 }
 
 .title {
     margin: 0;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 6rem;
+    font-size: 90pt;
     color:#aeb8fe;
-    /* line-height: 0.4; */
+    letter-spacing: 3px;
     color: #1f145e;
 	text-shadow: -1px 1px 0 #aeb8fe,
 				  1px 1px 0 #aeb8fe,
@@ -78,7 +43,39 @@ body {
 				  -1px -1px 0 #aeb8fe;
 }
 
+
+
 .title span {
     color:#aeb8fe;
+}
+
+.intro-container {
+    /* min-width: 100%; */ 
+    background-color: #ffd3ea;
+    
+}
+
+.intro-section {
+    background-color: cyan;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    /* padding-left: 20%; */
+    /* padding-right: 20%; */
+    padding-left: 15%;
+    padding-right: 10%;
+    color: #ff4d95;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+}
+
+.intro-section img{
+    width: 300px;
+    height: 500px;
+}
+
+.intro-section.item {
+    margin: 4em;
 }
 
