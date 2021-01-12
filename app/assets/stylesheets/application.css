@@ -18,17 +18,23 @@ body {
     background: #1f145e;
 }
 
-.header-container {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;
-    align-items: left; */
-    height: 50vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    margin-top: 25vh;
-    /* margin-bottom: 15vh; */
-    line-height: 0.9;
+.intro-scrolled{
+    background: #ffd3ea;
+    transition: background 400ms ease-in;
+}
+
+.header {
+    /* height: 100vh; */
+    /* margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%; */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15%;
+    line-height: 0.9; 
+    padding-bottom: 10rem;
+    background: transparent;
+    transition: background 400ms ease-in;
 }
 
 .title {
