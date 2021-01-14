@@ -2,10 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
    
 const intro = document.querySelector('.intro-section')
 const body = document.querySelector('body')
+const projects = document.querySelector('.projects')
 
 
 const introOptions = {
-    threshold: .90,
+    threshold: .80,
     rootMargin: "40px 0px 0px 0px"
 };
 
@@ -20,5 +21,24 @@ const introObserver = new IntersectionObserver(function(entires, introObserver){
 }, introOptions); 
 
 introObserver.observe(intro)
+
+const projectsOption = {
+    threshold: .90,
+    rootMargin: "40px 0px 0px 0px"
+};
+
+const projectsObserver = new IntersectionObserver(function(entries, projectsObserver){
+    entries.forEach( entry => {
+        if( entry.isIntersecting){
+            body.classList.add("projects-scrolled")
+        } else {
+            body.classList.remove("projects-scrolled")
+        }
+    })
+}, projectsOption)
+
+projectsObserver.observe(projects)
+
+
 })
 
