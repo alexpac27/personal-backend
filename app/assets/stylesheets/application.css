@@ -104,6 +104,20 @@ body {
     justify-content: space-evenly;
 }
 
+.social a:link {
+    color:#d89910;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: #54a31f;
+}
+
+.social a:visited {
+    color:#d89910;
+}
+
+
 .social-scrolled{
     background:#0a5edb;
     transition: background 400ms ease-in;
